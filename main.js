@@ -3,6 +3,7 @@ const errorMsg = document.querySelector('.error-msg')
 const mainPage = document.querySelector('.main-page')
 const dismissBtn = document.querySelector('.DismissBtn');
 const sucess = document.querySelector('.sucess');
+const inp =document.querySelector('#email');
 const handleSubmit = (e) => {
   e.preventDefault(e);
   const formData = new FormData(e.target);
@@ -12,6 +13,8 @@ const handleSubmit = (e) => {
   const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!validEmail.test(mail)) {
     errorMsg.textContent = 'valid email required';
+    inp.style.backgroundColor = 'hsl(4, 100%, 90%)';
+    inp.style.border ="none";
     return;  // Exit the function if email is invalid
   }
   mainPage.style.display = 'none'
