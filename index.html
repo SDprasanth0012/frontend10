@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <script defer src=main.js></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+ <main>
+  <div class="main-page"> 
+    <div class="form">
+      <h1>Stay updated !</h1>
+      <p>Join 60,000+ product managers receiving monthly updates  on:</p>
+      <ul>
+          <li><Img src="assets/images/icon-success.svg" alt="tick" width="20" height="20"> discovery and building what matters</li>
+          <li><Img src="assets/images/icon-success.svg" alt="tick" width="20" height="20">Measuring to ensure updates are a success</li>
+          <li><Img src="assets/images/icon-success.svg" alt="tick" width="20" height="20">And much more!</li>
+      </ul>
+      <form novalidate id="form">
+          <label for = "email">Email address<span class="error-msg"></span></label>
+          <input id ="email" name="email" type="email" placeholder="emailaddress@company.com">
+          <button type="submit" class="submitBtn">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="Image">
+      <Img src="assets/images/illustration-sign-up-desktop.svg" alt="form-pic">
+    </div>
+  </div>
+            <!-- Sign-up form end -->
+            
+            <!-- Success message start -->
+  <div class=sucess>
+
+    <Img src="assets/images/icon-success.svg" alt="tick" width="80" height="80"> 
+      <h1>Thanks for subscribing!</h1> 
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+        <button class="DismissBtn">  Dismiss message  </button>
+        
+   </div>
+   <!-- Success message end -->
+   
+   
+  </main>
+</body>
+</html>
