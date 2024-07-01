@@ -20,6 +20,9 @@ main {
     place-items: center;
     height: 100vh;
 }
+.mobile {
+    display: none;
+}
 .main-page{
     display: flex;
     background-color: var(--color-White);
@@ -99,15 +102,16 @@ button:hover {
         width: fit-content;
         padding: 0;
     }
-    .Image>Img {
-        display: none;
+    .mobile {
+        display: block;
+    }
+    .mobile>Img {
+        width: 100%;
     }
     .Image {
-        order :-1;
-        background-image: url(/assets/images/illustration-sign-up-mobile.svg);
-        object-fit: cover;
-        height: 250px;
+        display: none;
     }
+
     .form {
         align-self: start;
     }
